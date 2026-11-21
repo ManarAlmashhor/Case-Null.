@@ -1,0 +1,68 @@
+{
+  "CASE-001": {
+    "bits": {
+      "A": 57,
+      "S": 55,
+      "O": 26,
+      "L": 56,
+      "K": 63
+    },
+    "ignored_mask": 0,
+    "not_p": false
+  },
+  "BENCH-EMPTY": {
+    "bits": {
+      "A": 57,
+      "S": 54,
+      "O": 26,
+      "L": 56,
+      "K": 60
+    },
+    "ignored_mask": 0,
+    "not_p": false
+  },
+  "BENCH-MULTIPLE": {
+    "bits": {
+      "A": 57,
+      "S": 63,
+      "O": 24,
+      "L": 56,
+      "K": 63
+    },
+    "ignored_mask": 0,
+    "not_p": false
+  },
+  "BENCH-UNKNOWN": {
+    "bits": {
+      "A": 25,
+      "S": 23,
+      "O": 26,
+      "L": 24,
+      "K": 31
+    },
+    "ignored_mask": 32,
+    "not_p": false
+  },
+  "BENCH-CONFLICT": {
+    "bits": {
+      "A": 57,
+      "S": 55,
+      "O": 26,
+      "L": 56,
+      "K": 63
+    },
+    "ignored_mask": 0,
+    "not_p": true
+  },
+  "BENCH-DISPUTED": {
+    "bits": {
+      "A": 25,
+      "S": 23,
+      "O": 58,
+      "L": 24,
+      "K": 31
+    },
+    "ignored_mask": 32,
+    "not_p": false
+  }
+}

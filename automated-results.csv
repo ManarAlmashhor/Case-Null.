@@ -1,0 +1,385 @@
+﻿case_id,mask,selected,expected,actual,status,candidate_set_correct,exclusions_traceable,contradiction_safe,unknown_disputed_safe,passed
+CASE-001,0,[],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,1,['E1'],"['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,2,['E2'],"['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,3,"['E1', 'E2']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,4,['E3'],"['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,5,"['E1', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,6,"['E2', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,7,"['E1', 'E2', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,8,['E4'],"['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,9,"['E1', 'E4']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,10,"['E2', 'E4']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,11,"['E1', 'E2', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,12,"['E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,13,"['E1', 'E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,14,"['E2', 'E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,15,"['E1', 'E2', 'E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,16,['E5'],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,17,"['E1', 'E5']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,18,"['E2', 'E5']","['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,19,"['E1', 'E2', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,20,"['E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,21,"['E1', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,22,"['E2', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,23,"['E1', 'E2', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,24,"['E4', 'E5']","['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,25,"['E1', 'E4', 'E5']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,26,"['E2', 'E4', 'E5']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,27,"['E1', 'E2', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,28,"['E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,29,"['E1', 'E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,30,"['E2', 'E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,31,"['E1', 'E2', 'E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,32,['E6'],"['A', 'S', 'L', 'K']","['A', 'S', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,33,"['E1', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,34,"['E2', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,35,"['E1', 'E2', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,36,"['E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,37,"['E1', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,38,"['E2', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,39,"['E1', 'E2', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,40,"['E4', 'E6']","['A', 'L', 'K']","['A', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,41,"['E1', 'E4', 'E6']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,42,"['E2', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,43,"['E1', 'E2', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,44,"['E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,45,"['E1', 'E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,46,"['E2', 'E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,47,"['E1', 'E2', 'E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,48,"['E5', 'E6']","['A', 'S', 'L', 'K']","['A', 'S', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,49,"['E1', 'E5', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,50,"['E2', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,51,"['E1', 'E2', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,52,"['E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,53,"['E1', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,54,"['E2', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,55,"['E1', 'E2', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,56,"['E4', 'E5', 'E6']","['A', 'L', 'K']","['A', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,57,"['E1', 'E4', 'E5', 'E6']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+CASE-001,58,"['E2', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,59,"['E1', 'E2', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,60,"['E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,61,"['E1', 'E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,62,"['E2', 'E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+CASE-001,63,"['E1', 'E2', 'E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,0,[],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,1,['E1'],['A'],['A'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,2,['E2'],"['S', 'O']","['S', 'O']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,3,"['E1', 'E2']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,4,['E3'],"['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,5,"['E1', 'E3']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,6,"['E2', 'E3']",['S'],['S'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,7,"['E1', 'E2', 'E3']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,8,['E4'],"['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,9,"['E1', 'E4']",['A'],['A'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,10,"['E2', 'E4']",['O'],['O'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,11,"['E1', 'E2', 'E4']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,12,"['E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,13,"['E1', 'E3', 'E4']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,14,"['E2', 'E3', 'E4']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,15,"['E1', 'E2', 'E3', 'E4']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,16,['E5'],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,17,"['E1', 'E5']",['A'],['A'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,18,"['E2', 'E5']","['S', 'O']","['S', 'O']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,19,"['E1', 'E2', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,20,"['E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,21,"['E1', 'E3', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,22,"['E2', 'E3', 'E5']",['S'],['S'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,23,"['E1', 'E2', 'E3', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,24,"['E4', 'E5']","['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,25,"['E1', 'E4', 'E5']",['A'],['A'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,26,"['E2', 'E4', 'E5']",['O'],['O'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,27,"['E1', 'E2', 'E4', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,28,"['E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,29,"['E1', 'E3', 'E4', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,30,"['E2', 'E3', 'E4', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,31,"['E1', 'E2', 'E3', 'E4', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,32,['E6'],"['A', 'S', 'L', 'K']","['A', 'S', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,33,"['E1', 'E6']",['A'],['A'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,34,"['E2', 'E6']",['S'],['S'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,35,"['E1', 'E2', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,36,"['E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,37,"['E1', 'E3', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,38,"['E2', 'E3', 'E6']",['S'],['S'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,39,"['E1', 'E2', 'E3', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,40,"['E4', 'E6']","['A', 'L', 'K']","['A', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,41,"['E1', 'E4', 'E6']",['A'],['A'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,42,"['E2', 'E4', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,43,"['E1', 'E2', 'E4', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,44,"['E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,45,"['E1', 'E3', 'E4', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,46,"['E2', 'E3', 'E4', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,47,"['E1', 'E2', 'E3', 'E4', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,48,"['E5', 'E6']","['A', 'S', 'L', 'K']","['A', 'S', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,49,"['E1', 'E5', 'E6']",['A'],['A'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,50,"['E2', 'E5', 'E6']",['S'],['S'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,51,"['E1', 'E2', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,52,"['E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,53,"['E1', 'E3', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,54,"['E2', 'E3', 'E5', 'E6']",['S'],['S'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,55,"['E1', 'E2', 'E3', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,56,"['E4', 'E5', 'E6']","['A', 'L', 'K']","['A', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-EMPTY,57,"['E1', 'E4', 'E5', 'E6']",['A'],['A'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,58,"['E2', 'E4', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,59,"['E1', 'E2', 'E4', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,60,"['E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-EMPTY,61,"['E1', 'E3', 'E4', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,62,"['E2', 'E3', 'E4', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-EMPTY,63,"['E1', 'E2', 'E3', 'E4', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-MULTIPLE,0,[],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,1,['E1'],"['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,2,['E2'],"['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,3,"['E1', 'E2']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,4,['E3'],"['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,5,"['E1', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,6,"['E2', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,7,"['E1', 'E2', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,8,['E4'],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,9,"['E1', 'E4']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,10,"['E2', 'E4']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,11,"['E1', 'E2', 'E4']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,12,"['E3', 'E4']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,13,"['E1', 'E3', 'E4']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,14,"['E2', 'E3', 'E4']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,15,"['E1', 'E2', 'E3', 'E4']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,16,['E5'],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,17,"['E1', 'E5']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,18,"['E2', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,19,"['E1', 'E2', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,20,"['E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,21,"['E1', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,22,"['E2', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,23,"['E1', 'E2', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,24,"['E4', 'E5']","['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,25,"['E1', 'E4', 'E5']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,26,"['E2', 'E4', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,27,"['E1', 'E2', 'E4', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,28,"['E3', 'E4', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,29,"['E1', 'E3', 'E4', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,30,"['E2', 'E3', 'E4', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,31,"['E1', 'E2', 'E3', 'E4', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,32,['E6'],"['A', 'S', 'L', 'K']","['A', 'S', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,33,"['E1', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,34,"['E2', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,35,"['E1', 'E2', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,36,"['E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,37,"['E1', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,38,"['E2', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,39,"['E1', 'E2', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,40,"['E4', 'E6']","['A', 'S', 'L', 'K']","['A', 'S', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,41,"['E1', 'E4', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,42,"['E2', 'E4', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,43,"['E1', 'E2', 'E4', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,44,"['E3', 'E4', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,45,"['E1', 'E3', 'E4', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,46,"['E2', 'E3', 'E4', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,47,"['E1', 'E2', 'E3', 'E4', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,48,"['E5', 'E6']","['A', 'S', 'L', 'K']","['A', 'S', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,49,"['E1', 'E5', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,50,"['E2', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,51,"['E1', 'E2', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,52,"['E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,53,"['E1', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,54,"['E2', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,55,"['E1', 'E2', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,56,"['E4', 'E5', 'E6']","['A', 'S', 'L', 'K']","['A', 'S', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,57,"['E1', 'E4', 'E5', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,58,"['E2', 'E4', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,59,"['E1', 'E2', 'E4', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,60,"['E3', 'E4', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,61,"['E1', 'E3', 'E4', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,62,"['E2', 'E3', 'E4', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-MULTIPLE,63,"['E1', 'E2', 'E3', 'E4', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,0,[],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,1,['E1'],"['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,2,['E2'],"['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,3,"['E1', 'E2']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,4,['E3'],"['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,5,"['E1', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,6,"['E2', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,7,"['E1', 'E2', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,8,['E4'],"['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,9,"['E1', 'E4']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,10,"['E2', 'E4']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,11,"['E1', 'E2', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,12,"['E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,13,"['E1', 'E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,14,"['E2', 'E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,15,"['E1', 'E2', 'E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,16,['E5'],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,17,"['E1', 'E5']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,18,"['E2', 'E5']","['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,19,"['E1', 'E2', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,20,"['E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,21,"['E1', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,22,"['E2', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,23,"['E1', 'E2', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,24,"['E4', 'E5']","['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,25,"['E1', 'E4', 'E5']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,26,"['E2', 'E4', 'E5']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,27,"['E1', 'E2', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,28,"['E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,29,"['E1', 'E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,30,"['E2', 'E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,31,"['E1', 'E2', 'E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,32,['E6'],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,33,"['E1', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,34,"['E2', 'E6']","['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,35,"['E1', 'E2', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,36,"['E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,37,"['E1', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,38,"['E2', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,39,"['E1', 'E2', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,40,"['E4', 'E6']","['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,41,"['E1', 'E4', 'E6']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,42,"['E2', 'E4', 'E6']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,43,"['E1', 'E2', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,44,"['E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,45,"['E1', 'E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,46,"['E2', 'E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,47,"['E1', 'E2', 'E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,48,"['E5', 'E6']","['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,49,"['E1', 'E5', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,50,"['E2', 'E5', 'E6']","['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,51,"['E1', 'E2', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,52,"['E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,53,"['E1', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,54,"['E2', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,55,"['E1', 'E2', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,56,"['E4', 'E5', 'E6']","['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,57,"['E1', 'E4', 'E5', 'E6']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,58,"['E2', 'E4', 'E5', 'E6']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-UNKNOWN,59,"['E1', 'E2', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,60,"['E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,61,"['E1', 'E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,62,"['E2', 'E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-UNKNOWN,63,"['E1', 'E2', 'E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-CONFLICT,0,[],"['O', 'L']","['O', 'L']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-CONFLICT,1,['E1'],,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,2,['E2'],['O'],['O'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-CONFLICT,3,"['E1', 'E2']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,4,['E3'],[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,5,"['E1', 'E3']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,6,"['E2', 'E3']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,7,"['E1', 'E2', 'E3']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,8,['E4'],"['O', 'L']","['O', 'L']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-CONFLICT,9,"['E1', 'E4']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,10,"['E2', 'E4']",['O'],['O'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-CONFLICT,11,"['E1', 'E2', 'E4']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,12,"['E3', 'E4']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,13,"['E1', 'E3', 'E4']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,14,"['E2', 'E3', 'E4']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,15,"['E1', 'E2', 'E3', 'E4']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,16,['E5'],"['O', 'L']","['O', 'L']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-CONFLICT,17,"['E1', 'E5']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,18,"['E2', 'E5']",['O'],['O'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-CONFLICT,19,"['E1', 'E2', 'E5']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,20,"['E3', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,21,"['E1', 'E3', 'E5']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,22,"['E2', 'E3', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,23,"['E1', 'E2', 'E3', 'E5']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,24,"['E4', 'E5']","['O', 'L']","['O', 'L']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-CONFLICT,25,"['E1', 'E4', 'E5']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,26,"['E2', 'E4', 'E5']",['O'],['O'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-CONFLICT,27,"['E1', 'E2', 'E4', 'E5']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,28,"['E3', 'E4', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,29,"['E1', 'E3', 'E4', 'E5']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,30,"['E2', 'E3', 'E4', 'E5']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,31,"['E1', 'E2', 'E3', 'E4', 'E5']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,32,['E6'],['L'],['L'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-CONFLICT,33,"['E1', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,34,"['E2', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,35,"['E1', 'E2', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,36,"['E3', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,37,"['E1', 'E3', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,38,"['E2', 'E3', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,39,"['E1', 'E2', 'E3', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,40,"['E4', 'E6']",['L'],['L'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-CONFLICT,41,"['E1', 'E4', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,42,"['E2', 'E4', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,43,"['E1', 'E2', 'E4', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,44,"['E3', 'E4', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,45,"['E1', 'E3', 'E4', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,46,"['E2', 'E3', 'E4', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,47,"['E1', 'E2', 'E3', 'E4', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,48,"['E5', 'E6']",['L'],['L'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-CONFLICT,49,"['E1', 'E5', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,50,"['E2', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,51,"['E1', 'E2', 'E5', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,52,"['E3', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,53,"['E1', 'E3', 'E5', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,54,"['E2', 'E3', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,55,"['E1', 'E2', 'E3', 'E5', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,56,"['E4', 'E5', 'E6']",['L'],['L'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-CONFLICT,57,"['E1', 'E4', 'E5', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,58,"['E2', 'E4', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,59,"['E1', 'E2', 'E4', 'E5', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,60,"['E3', 'E4', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,61,"['E1', 'E3', 'E4', 'E5', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-CONFLICT,62,"['E2', 'E3', 'E4', 'E5', 'E6']",[],[],NO_MATCH,True,True,True,True,True
+BENCH-CONFLICT,63,"['E1', 'E2', 'E3', 'E4', 'E5', 'E6']",,,CONTRADICTION,True,True,True,True,True
+BENCH-DISPUTED,0,[],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,1,['E1'],"['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,2,['E2'],"['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,3,"['E1', 'E2']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,4,['E3'],"['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,5,"['E1', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,6,"['E2', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,7,"['E1', 'E2', 'E3']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,8,['E4'],"['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,9,"['E1', 'E4']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,10,"['E2', 'E4']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,11,"['E1', 'E2', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,12,"['E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,13,"['E1', 'E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,14,"['E2', 'E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,15,"['E1', 'E2', 'E3', 'E4']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,16,['E5'],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,17,"['E1', 'E5']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,18,"['E2', 'E5']","['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,19,"['E1', 'E2', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,20,"['E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,21,"['E1', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,22,"['E2', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,23,"['E1', 'E2', 'E3', 'E5']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,24,"['E4', 'E5']","['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,25,"['E1', 'E4', 'E5']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,26,"['E2', 'E4', 'E5']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,27,"['E1', 'E2', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,28,"['E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,29,"['E1', 'E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,30,"['E2', 'E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,31,"['E1', 'E2', 'E3', 'E4', 'E5']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,32,['E6'],"['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,33,"['E1', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,34,"['E2', 'E6']","['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,35,"['E1', 'E2', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,36,"['E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,37,"['E1', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,38,"['E2', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,39,"['E1', 'E2', 'E3', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,40,"['E4', 'E6']","['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,41,"['E1', 'E4', 'E6']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,42,"['E2', 'E4', 'E6']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,43,"['E1', 'E2', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,44,"['E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,45,"['E1', 'E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,46,"['E2', 'E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,47,"['E1', 'E2', 'E3', 'E4', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,48,"['E5', 'E6']","['A', 'S', 'O', 'L', 'K']","['A', 'S', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,49,"['E1', 'E5', 'E6']","['A', 'S', 'K']","['A', 'S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,50,"['E2', 'E5', 'E6']","['S', 'O', 'K']","['S', 'O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,51,"['E1', 'E2', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,52,"['E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,53,"['E1', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,54,"['E2', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,55,"['E1', 'E2', 'E3', 'E5', 'E6']","['S', 'K']","['S', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,56,"['E4', 'E5', 'E6']","['A', 'O', 'L', 'K']","['A', 'O', 'L', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,57,"['E1', 'E4', 'E5', 'E6']","['A', 'K']","['A', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,58,"['E2', 'E4', 'E5', 'E6']","['O', 'K']","['O', 'K']",MULTIPLE_CANDIDATES,True,True,True,True,True
+BENCH-DISPUTED,59,"['E1', 'E2', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,60,"['E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,61,"['E1', 'E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,62,"['E2', 'E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True
+BENCH-DISPUTED,63,"['E1', 'E2', 'E3', 'E4', 'E5', 'E6']",['K'],['K'],ONE_CANDIDATE,True,True,True,True,True

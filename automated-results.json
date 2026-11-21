@@ -1,0 +1,8477 @@
+{
+  "generated_at_utc": "2026-11-12T15:34:54.127124+00:00",
+  "evaluation_type": "Automated deterministic correctness and traceability checks",
+  "baseline_method": "Manually specified six-column Boolean tables encoded as independent bitmasks. No baseline is inferred from the engine output.",
+  "case_count": 6,
+  "pattern_count": 384,
+  "passed": 384,
+  "failed": 0,
+  "duration_seconds": 0.3958,
+  "candidate_set_matches": 384,
+  "traceability_passes": 384,
+  "cases": [
+    {
+      "case_id": "CASE-001",
+      "patterns": 64,
+      "passed": 64,
+      "statuses": [
+        "MULTIPLE_CANDIDATES",
+        "ONE_CANDIDATE"
+      ]
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "patterns": 64,
+      "passed": 64,
+      "statuses": [
+        "MULTIPLE_CANDIDATES",
+        "NO_MATCH",
+        "ONE_CANDIDATE"
+      ]
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "patterns": 64,
+      "passed": 64,
+      "statuses": [
+        "MULTIPLE_CANDIDATES"
+      ]
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "patterns": 64,
+      "passed": 64,
+      "statuses": [
+        "MULTIPLE_CANDIDATES",
+        "ONE_CANDIDATE"
+      ]
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "patterns": 64,
+      "passed": 64,
+      "statuses": [
+        "CONTRADICTION",
+        "MULTIPLE_CANDIDATES",
+        "NO_MATCH",
+        "ONE_CANDIDATE"
+      ]
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "patterns": 64,
+      "passed": 64,
+      "statuses": [
+        "MULTIPLE_CANDIDATES",
+        "ONE_CANDIDATE"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "case_id": "CASE-001",
+      "mask": 0,
+      "selected": [],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 1,
+      "selected": [
+        "E1"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 2,
+      "selected": [
+        "E2"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 3,
+      "selected": [
+        "E1",
+        "E2"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 4,
+      "selected": [
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 5,
+      "selected": [
+        "E1",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 6,
+      "selected": [
+        "E2",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 7,
+      "selected": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 8,
+      "selected": [
+        "E4"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 9,
+      "selected": [
+        "E1",
+        "E4"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 10,
+      "selected": [
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 11,
+      "selected": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 12,
+      "selected": [
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 13,
+      "selected": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 14,
+      "selected": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 15,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 16,
+      "selected": [
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 17,
+      "selected": [
+        "E1",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 18,
+      "selected": [
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 19,
+      "selected": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 20,
+      "selected": [
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 21,
+      "selected": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 22,
+      "selected": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 23,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 24,
+      "selected": [
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 25,
+      "selected": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 26,
+      "selected": [
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 27,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 28,
+      "selected": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 29,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 30,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 31,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 32,
+      "selected": [
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 33,
+      "selected": [
+        "E1",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 34,
+      "selected": [
+        "E2",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 35,
+      "selected": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 36,
+      "selected": [
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 37,
+      "selected": [
+        "E1",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 38,
+      "selected": [
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 39,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 40,
+      "selected": [
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 41,
+      "selected": [
+        "E1",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 42,
+      "selected": [
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 43,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 44,
+      "selected": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 45,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 46,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 47,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 48,
+      "selected": [
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 49,
+      "selected": [
+        "E1",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 50,
+      "selected": [
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 51,
+      "selected": [
+        "E1",
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 52,
+      "selected": [
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 53,
+      "selected": [
+        "E1",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 54,
+      "selected": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 55,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 56,
+      "selected": [
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 57,
+      "selected": [
+        "E1",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 58,
+      "selected": [
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 59,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 60,
+      "selected": [
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 61,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 62,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "CASE-001",
+      "mask": 63,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 0,
+      "selected": [],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 1,
+      "selected": [
+        "E1"
+      ],
+      "expected": [
+        "A"
+      ],
+      "actual": [
+        "A"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 2,
+      "selected": [
+        "E2"
+      ],
+      "expected": [
+        "S",
+        "O"
+      ],
+      "actual": [
+        "S",
+        "O"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 3,
+      "selected": [
+        "E1",
+        "E2"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 4,
+      "selected": [
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 5,
+      "selected": [
+        "E1",
+        "E3"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 6,
+      "selected": [
+        "E2",
+        "E3"
+      ],
+      "expected": [
+        "S"
+      ],
+      "actual": [
+        "S"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 7,
+      "selected": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 8,
+      "selected": [
+        "E4"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 9,
+      "selected": [
+        "E1",
+        "E4"
+      ],
+      "expected": [
+        "A"
+      ],
+      "actual": [
+        "A"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 10,
+      "selected": [
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "O"
+      ],
+      "actual": [
+        "O"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 11,
+      "selected": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 12,
+      "selected": [
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 13,
+      "selected": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 14,
+      "selected": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 15,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 16,
+      "selected": [
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 17,
+      "selected": [
+        "E1",
+        "E5"
+      ],
+      "expected": [
+        "A"
+      ],
+      "actual": [
+        "A"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 18,
+      "selected": [
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "O"
+      ],
+      "actual": [
+        "S",
+        "O"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 19,
+      "selected": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 20,
+      "selected": [
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 21,
+      "selected": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 22,
+      "selected": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S"
+      ],
+      "actual": [
+        "S"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 23,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 24,
+      "selected": [
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 25,
+      "selected": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A"
+      ],
+      "actual": [
+        "A"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 26,
+      "selected": [
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "O"
+      ],
+      "actual": [
+        "O"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 27,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 28,
+      "selected": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 29,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 30,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 31,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 32,
+      "selected": [
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 33,
+      "selected": [
+        "E1",
+        "E6"
+      ],
+      "expected": [
+        "A"
+      ],
+      "actual": [
+        "A"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 34,
+      "selected": [
+        "E2",
+        "E6"
+      ],
+      "expected": [
+        "S"
+      ],
+      "actual": [
+        "S"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 35,
+      "selected": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 36,
+      "selected": [
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 37,
+      "selected": [
+        "E1",
+        "E3",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 38,
+      "selected": [
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S"
+      ],
+      "actual": [
+        "S"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 39,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 40,
+      "selected": [
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 41,
+      "selected": [
+        "E1",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A"
+      ],
+      "actual": [
+        "A"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 42,
+      "selected": [
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 43,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 44,
+      "selected": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 45,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 46,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 47,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 48,
+      "selected": [
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 49,
+      "selected": [
+        "E1",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A"
+      ],
+      "actual": [
+        "A"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 50,
+      "selected": [
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S"
+      ],
+      "actual": [
+        "S"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 51,
+      "selected": [
+        "E1",
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 52,
+      "selected": [
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 53,
+      "selected": [
+        "E1",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 54,
+      "selected": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S"
+      ],
+      "actual": [
+        "S"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 55,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 56,
+      "selected": [
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 57,
+      "selected": [
+        "E1",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A"
+      ],
+      "actual": [
+        "A"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 58,
+      "selected": [
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 59,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 60,
+      "selected": [
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 61,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 62,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-EMPTY",
+      "mask": 63,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 0,
+      "selected": [],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 1,
+      "selected": [
+        "E1"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 2,
+      "selected": [
+        "E2"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 3,
+      "selected": [
+        "E1",
+        "E2"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 4,
+      "selected": [
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 5,
+      "selected": [
+        "E1",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 6,
+      "selected": [
+        "E2",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 7,
+      "selected": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 8,
+      "selected": [
+        "E4"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 9,
+      "selected": [
+        "E1",
+        "E4"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 10,
+      "selected": [
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 11,
+      "selected": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 12,
+      "selected": [
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 13,
+      "selected": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 14,
+      "selected": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 15,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 16,
+      "selected": [
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 17,
+      "selected": [
+        "E1",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 18,
+      "selected": [
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 19,
+      "selected": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 20,
+      "selected": [
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 21,
+      "selected": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 22,
+      "selected": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 23,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 24,
+      "selected": [
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 25,
+      "selected": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 26,
+      "selected": [
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 27,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 28,
+      "selected": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 29,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 30,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 31,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 32,
+      "selected": [
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 33,
+      "selected": [
+        "E1",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 34,
+      "selected": [
+        "E2",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 35,
+      "selected": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 36,
+      "selected": [
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 37,
+      "selected": [
+        "E1",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 38,
+      "selected": [
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 39,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 40,
+      "selected": [
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 41,
+      "selected": [
+        "E1",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 42,
+      "selected": [
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 43,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 44,
+      "selected": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 45,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 46,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 47,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 48,
+      "selected": [
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 49,
+      "selected": [
+        "E1",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 50,
+      "selected": [
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 51,
+      "selected": [
+        "E1",
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 52,
+      "selected": [
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 53,
+      "selected": [
+        "E1",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 54,
+      "selected": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 55,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 56,
+      "selected": [
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 57,
+      "selected": [
+        "E1",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 58,
+      "selected": [
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 59,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 60,
+      "selected": [
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 61,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 62,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-MULTIPLE",
+      "mask": 63,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 0,
+      "selected": [],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 1,
+      "selected": [
+        "E1"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 2,
+      "selected": [
+        "E2"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 3,
+      "selected": [
+        "E1",
+        "E2"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 4,
+      "selected": [
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 5,
+      "selected": [
+        "E1",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 6,
+      "selected": [
+        "E2",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 7,
+      "selected": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 8,
+      "selected": [
+        "E4"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 9,
+      "selected": [
+        "E1",
+        "E4"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 10,
+      "selected": [
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 11,
+      "selected": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 12,
+      "selected": [
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 13,
+      "selected": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 14,
+      "selected": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 15,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 16,
+      "selected": [
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 17,
+      "selected": [
+        "E1",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 18,
+      "selected": [
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 19,
+      "selected": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 20,
+      "selected": [
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 21,
+      "selected": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 22,
+      "selected": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 23,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 24,
+      "selected": [
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 25,
+      "selected": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 26,
+      "selected": [
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 27,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 28,
+      "selected": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 29,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 30,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 31,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 32,
+      "selected": [
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 33,
+      "selected": [
+        "E1",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 34,
+      "selected": [
+        "E2",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 35,
+      "selected": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 36,
+      "selected": [
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 37,
+      "selected": [
+        "E1",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 38,
+      "selected": [
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 39,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 40,
+      "selected": [
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 41,
+      "selected": [
+        "E1",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 42,
+      "selected": [
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 43,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 44,
+      "selected": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 45,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 46,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 47,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 48,
+      "selected": [
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 49,
+      "selected": [
+        "E1",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 50,
+      "selected": [
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 51,
+      "selected": [
+        "E1",
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 52,
+      "selected": [
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 53,
+      "selected": [
+        "E1",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 54,
+      "selected": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 55,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 56,
+      "selected": [
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 57,
+      "selected": [
+        "E1",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 58,
+      "selected": [
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 59,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 60,
+      "selected": [
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 61,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 62,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-UNKNOWN",
+      "mask": 63,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 0,
+      "selected": [],
+      "expected": [
+        "O",
+        "L"
+      ],
+      "actual": [
+        "O",
+        "L"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 1,
+      "selected": [
+        "E1"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 2,
+      "selected": [
+        "E2"
+      ],
+      "expected": [
+        "O"
+      ],
+      "actual": [
+        "O"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 3,
+      "selected": [
+        "E1",
+        "E2"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 4,
+      "selected": [
+        "E3"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 5,
+      "selected": [
+        "E1",
+        "E3"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 6,
+      "selected": [
+        "E2",
+        "E3"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 7,
+      "selected": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 8,
+      "selected": [
+        "E4"
+      ],
+      "expected": [
+        "O",
+        "L"
+      ],
+      "actual": [
+        "O",
+        "L"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 9,
+      "selected": [
+        "E1",
+        "E4"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 10,
+      "selected": [
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "O"
+      ],
+      "actual": [
+        "O"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 11,
+      "selected": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 12,
+      "selected": [
+        "E3",
+        "E4"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 13,
+      "selected": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 14,
+      "selected": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 15,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 16,
+      "selected": [
+        "E5"
+      ],
+      "expected": [
+        "O",
+        "L"
+      ],
+      "actual": [
+        "O",
+        "L"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 17,
+      "selected": [
+        "E1",
+        "E5"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 18,
+      "selected": [
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "O"
+      ],
+      "actual": [
+        "O"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 19,
+      "selected": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 20,
+      "selected": [
+        "E3",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 21,
+      "selected": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 22,
+      "selected": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 23,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 24,
+      "selected": [
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "O",
+        "L"
+      ],
+      "actual": [
+        "O",
+        "L"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 25,
+      "selected": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 26,
+      "selected": [
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "O"
+      ],
+      "actual": [
+        "O"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 27,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 28,
+      "selected": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 29,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 30,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 31,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 32,
+      "selected": [
+        "E6"
+      ],
+      "expected": [
+        "L"
+      ],
+      "actual": [
+        "L"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 33,
+      "selected": [
+        "E1",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 34,
+      "selected": [
+        "E2",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 35,
+      "selected": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 36,
+      "selected": [
+        "E3",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 37,
+      "selected": [
+        "E1",
+        "E3",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 38,
+      "selected": [
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 39,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 40,
+      "selected": [
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "L"
+      ],
+      "actual": [
+        "L"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 41,
+      "selected": [
+        "E1",
+        "E4",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 42,
+      "selected": [
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 43,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 44,
+      "selected": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 45,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 46,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 47,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 48,
+      "selected": [
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "L"
+      ],
+      "actual": [
+        "L"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 49,
+      "selected": [
+        "E1",
+        "E5",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 50,
+      "selected": [
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 51,
+      "selected": [
+        "E1",
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 52,
+      "selected": [
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 53,
+      "selected": [
+        "E1",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 54,
+      "selected": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 55,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 56,
+      "selected": [
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "L"
+      ],
+      "actual": [
+        "L"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 57,
+      "selected": [
+        "E1",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 58,
+      "selected": [
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 59,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 60,
+      "selected": [
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 61,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 62,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [],
+      "actual": [],
+      "status": "NO_MATCH",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-CONFLICT",
+      "mask": 63,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": null,
+      "actual": null,
+      "status": "CONTRADICTION",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 0,
+      "selected": [],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 1,
+      "selected": [
+        "E1"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 2,
+      "selected": [
+        "E2"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 3,
+      "selected": [
+        "E1",
+        "E2"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 4,
+      "selected": [
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 5,
+      "selected": [
+        "E1",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 6,
+      "selected": [
+        "E2",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 7,
+      "selected": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 8,
+      "selected": [
+        "E4"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 9,
+      "selected": [
+        "E1",
+        "E4"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 10,
+      "selected": [
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 11,
+      "selected": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 12,
+      "selected": [
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 13,
+      "selected": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 14,
+      "selected": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 15,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 16,
+      "selected": [
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 17,
+      "selected": [
+        "E1",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 18,
+      "selected": [
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 19,
+      "selected": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 20,
+      "selected": [
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 21,
+      "selected": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 22,
+      "selected": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 23,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 24,
+      "selected": [
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 25,
+      "selected": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 26,
+      "selected": [
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 27,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 28,
+      "selected": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 29,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 30,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 31,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 32,
+      "selected": [
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 33,
+      "selected": [
+        "E1",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 34,
+      "selected": [
+        "E2",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 35,
+      "selected": [
+        "E1",
+        "E2",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 36,
+      "selected": [
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 37,
+      "selected": [
+        "E1",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 38,
+      "selected": [
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 39,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 40,
+      "selected": [
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 41,
+      "selected": [
+        "E1",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 42,
+      "selected": [
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 43,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 44,
+      "selected": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 45,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 46,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 47,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 48,
+      "selected": [
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 49,
+      "selected": [
+        "E1",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "S",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 50,
+      "selected": [
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "O",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 51,
+      "selected": [
+        "E1",
+        "E2",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 52,
+      "selected": [
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 53,
+      "selected": [
+        "E1",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 54,
+      "selected": [
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 55,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "S",
+        "K"
+      ],
+      "actual": [
+        "S",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 56,
+      "selected": [
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "O",
+        "L",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 57,
+      "selected": [
+        "E1",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "A",
+        "K"
+      ],
+      "actual": [
+        "A",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 58,
+      "selected": [
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "O",
+        "K"
+      ],
+      "actual": [
+        "O",
+        "K"
+      ],
+      "status": "MULTIPLE_CANDIDATES",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 59,
+      "selected": [
+        "E1",
+        "E2",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 60,
+      "selected": [
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 61,
+      "selected": [
+        "E1",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 62,
+      "selected": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    },
+    {
+      "case_id": "BENCH-DISPUTED",
+      "mask": 63,
+      "selected": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "expected": [
+        "K"
+      ],
+      "actual": [
+        "K"
+      ],
+      "status": "ONE_CANDIDATE",
+      "candidate_set_correct": true,
+      "exclusions_traceable": true,
+      "contradiction_safe": true,
+      "unknown_disputed_safe": true,
+      "passed": true
+    }
+  ],
+  "human_study": {
+    "status": "NOT_CONDUCTED",
+    "participants": null,
+    "comprehension_results": null,
+    "usability_results": null,
+    "note": "Automated tests do not establish usability, learning gains, forensic validity, or novelty. Participant tasks, consent safeguards and an objective rubric are supplied separately."
+  }
+}

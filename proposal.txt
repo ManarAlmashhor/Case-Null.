@@ -1,0 +1,458 @@
+Discrete Math Project Research
+General Science Department
+Case:Null
+An Interactive Logic-Based Digital Forensic Investigation System Using Discrete Mathematics
+Academic research and proposed system design
+Course: Discrete Mathematics
+Instructor: Dr. Sumaih Almarshi
+Group Members
+Manar Al-Mashhor · 231200486
+Rimas Jastaniah · 231200206
+Layan Almatari · 221200363
+Table of Contents
+Abstract............................................................................................................................................3
+1. Introduction .................................................................................................................................3
+2. Literature Review.........................................................................................................................4
+3. Discrete Mathematical Framework .............................................................................................5
+4. Proposed System Design..............................................................................................................6
+5. Proposed Research Methodology................................................................................................7
+6. Feasibility and Development Plan................................................................................................8
+7. Discussion and Limitations...........................................................................................................9
+8. Conclusion....................................................................................................................................9
+References......................................................................................................................................10
+Appendix A. Integrated Illustrative Case: All Five Chapters in Action ...........................................11
+Case: Null | RESEARCH
+3
+Abstract
+This research proposal presents case: null, an educational digital-forensics investigation
+platform in which discrete mathematics powers evidence-based reasoning. The proposed
+application combines an interactive evidence board with a deterministic inference engine that
+represents suspects, access permissions, login records, and device activity using sets,
+predicates, Boolean matrices, and binary relations. When an investigator selects a clue, the
+system updates the set of candidates who remain consistent with the evidence and displays
+the corresponding mathematical explanation. A separate consistency checker distinguishes
+mutually contradictory statements from incomplete or unknown information. The proposal is
+grounded in published work on formal digital-forensic reasoning and evidence graphs, while
+deliberately limiting its scope to fictional, controlled cases rather than real-world criminal
+attribution. An implementation and evaluation plan is provided to test reasoning correctness,
+explanation traceability, interaction usability, and educational value. No experimental results
+are claimed, because the platform has not yet been implemented or tested.
+Keywords: discrete mathematics; digital forensics; propositional logic; set theory; binary
+relations; explainable reasoning; educational software
+1. Introduction
+Digital investigations increasingly involve heterogeneous records: account permissions,
+authentication events, computer usage, and communications. Converting such records into
+defensible conclusions requires explicit reasoning and evidence traceability. Formal
+approaches have been investigated for network-forensic reconstruction (Liu et al., 2015),
+while the NIST SP 800-86 guidance describes forensic collection, examination, analysis, and
+reporting from an information-technology perspective (Kent et al., 2006).
+case: null adapts these principles into a classroom-scale interactive environment. Instead of
+asking an AI model to guess a culprit, the proposed software encodes the evidence as
+transparent conditions and uses mathematical operations to determine which fictional
+suspects remain compatible with those conditions. The dramatic detective-style interface
+motivates interaction; the reasoning engine must remain reproducible, inspectable, and
+mathematically correct.
+1.1 Problem statement
+A visually compelling investigation simulation can obscure the reasoning process when it
+presents suspect decisions without showing the logic behind them. Conversely, a conventional
+truth-table or set calculator can demonstrate mathematics without showing why it matters in
+practical computing. The project addresses this pedagogical gap by presenting formal
+reasoning and interactive case investigation in a single system.
+Case: Null | RESEARCH
+4
+1.2 Research question and objectives
+Research question: Can an interactive, rule-based investigation system accurately filter
+candidates against simulated digital evidence and explain each decision in terms of discrete
+mathematical operations?
+• Model fictional investigative facts using sets, predicates, functions, relations, and Boolean
+matrices.
+• Implement deterministic candidate filtering and contradiction checks without inventing
+missing evidence.
+• Visualize evidence connections and display an explanation for every candidate inclusion or
+exclusion.
+• Evaluate algorithmic correctness and user comprehension using predefined cases and
+objective rubrics.
+2. Literature Review
+2.1 Digital-forensics process and evidence analysis
+NIST SP 800-86 provides practical guidance for integrating digital-forensic techniques into
+incident response, including examination of files, operating systems, networks, and
+applications (Kent et al., 2006). It also cautions that technical guidance is not a substitute for
+applicable legal procedures. case: null therefore imitates investigation steps for educational
+purposes; it does not claim evidentiary admissibility or real-world investigative authority.
+2.2 Logic-based forensic reconstruction
+Liu et al. (2015) proposed a logic-based model that links digital evidence to system
+vulnerabilities and reconstructs plausible attack scenarios. Case: Null applies the same general
+idea of explicit reasoning to a fictional investigation by using set operations to determine
+which suspects remain consistent with the verified clues.
+2.3 Knowledge representation and explainability
+Casey et al. (2017) developed a specification for representing digital evidence, recording its
+origins, and linking related items across investigative tools. More recently, Lee et al. (2025)
+proposed DF-graph, which structures communications evidence in a knowledge graph and
+emphasizes traceable explanations. These studies motivate the project’s separation of
+evidence records, inference rules, and explanation output. They do not establish that the
+proposed case: null interface is novel or that its future educational outcomes will be positive.
+Case: Null | RESEARCH
+5
+2.4 Research positioning
+Published work Relevant contribution Adaptation proposed here
+Kent et al. (2006) Forensic workflow and
+evidence handling
+Case stages,source labels,
+reports
+Liu et al. (2015) Evidence-based
+reconstruction
+Ruleslinking logs and
+suspects
+Casey et al. (2017) Structured representation of
+digital evidence
+Linked evidence records and
+source labels
+Lee et al. (2025) Graph-based, explainable
+analysis
+Connected evidence board
+and traces
+3. Discrete Mathematical Framework
+The core algorithm is based on topics directly represented in the Discrete Mathematics
+syllabus: propositional logic, predicates and quantifiers, sets, functions, matrices,
+mathematical induction, counting, and relations. The goal isto use the concepts as executable
+system components rather than decorative labels.
+Course area Formal construct Software role
+Chapter 1 — Logic & Proofs P(x) ∧ L(x) ∧ C(x);
+implication;satisfiability
+Evaluate clues and detect
+contradictions
+Chapter 2 — Basic Structures Set intersection; mappings;
+0–1 matrices
+Filtersuspects and encode
+evidence
+Chapter 3 — Induction Invariant for k processed
+clues Prove filter correctness
+Chapter 4 — Counting 2ⁿ subsets; combinations Count possible selected-clue
+sets
+Chapter 5 — Relations R ⊆ Users × Files Represent user-to-resource
+permissions
+3.1 Formal candidate filtering
+Let U be the finite set of fictional suspects, E₁, E₂, …, Eₖthe sets of suspects satisfying each
+selected verified clue, and Cₖthe remaining candidates after processing k clues. The filtering rule
+is:
+C₀ = U and Cₖ = Cₖ₋₁ ∩ Eₖ
+Case: Null | RESEARCH
+6
+Equivalently, Cₖ = U ∩ E₁ ∩ E₂ ∩ … ∩ Eₖ. Thisintersection is a mathematicalstatement about
+compatibility with selected conditions; it does not infer guilt. If a clue is unverified or itstruth
+value is unknown, it should not be treated as a mandatory exclusion condition.
+3.2 Binary relations and matrices
+Let F represent the set of files. A permission relation R is a subset of U × F, in which (u, f) ∈ R
+means user u can access file f. A 0–1 incidence matrix M can encode whether each user
+satisfies a given evidence condition. For a candidate whose required entries are all 1, the
+conjunction evaluates to true. This is a Boolean operation, not ordinary arithmetic matrix
+multiplication.
+3.3 Inductive correctness argument
+Base case: before any clue is processed, the algorithm returns C₀ = U, so every candidate
+satisfying the empty collection of clues remains. Induction hypothesis: after k clues, Cₖ
+contains exactly those members of U satisfying all k clues. Inductive step: processing clue k+1
+returns Cₖ₊₁ = Cₖ ∩ Eₖ₊₁. The resulting set contains exactly the candidatessatisfying the previous k
+clues and clue k+1. Therefore the invariant holds for any finite number of processed clues.
+3.4 Counting possible clue selections
+For n independently selectable binary clue controls, there are 2ⁿ possible subsets of selected
+clues. With six controls, there are 2⁶ = 64 selection patterns. The number of valid candidates
+under any selection must still be computed from the selected evidence; counting alone cannot
+identify a culprit. More complex extensions may count ordered event sequences or
+combinations of multiple actors.
+4. Proposed System Design
+The prototype is planned as a browser-based application with four logically separate modules:
+a synthetic evidence repository, an inference engine, an interactive evidence board, and an
+explanation/report module. This separation helps ensure that visual interactions cannot
+silently change the underlying inference rules.
+Figure 1. Proposed architecture of the logic-based investigation system (original diagram).
+Case: Null | RESEARCH
+7
+4.1 Core functional requirements
+• Load fictional cases containing suspects, permission records, computer events,
+timestamps, and evidence-source metadata.
+• Let the investigator select or deselect clues, causing immediate recomputation of
+candidate sets.
+• Show evidence connections on a draggable, node-based investigation board.
+• Display the exact set operation, applicable rule, and reason behind each exclusion.
+• Report an empty candidate set as a consistency warning rather than assuming a new
+culprit.
+• Export a case summary containing the selected evidence and the trace of reasoning.
+4.2 Implementation approach
+The simplest version can use Python, sets, dictionaries, SymPy for propositional-logic
+satisfiability checks, and Streamlit for the interface. A more visually polished implementation
+can use React and React Flow for draggable evidence cards connected by edges, with a Python
+service providing deterministic filtering. These choices are supported by official library
+documentation (SymPy Development Team, n.d.; Streamlit, n.d.; React Flow, n.d.).
+4.3 Handling missing and conflicting evidence
+A critical design rule is to distinguish true, false, and unknown facts. A missing login record
+does not necessarily prove that a person was not logged in. Clues have metadata: source,
+time, reliability status, and whether they are mandatory or provisional. Verified mandatory
+clues affect the set intersection; disputed facts remain visible but do not automatically
+eliminate a candidate. Conflicting statements should generate an inconsistency alert, not a
+forced suspect selection.
+4.4 User interface and case narrative
+The interface follows a cyber-noir investigation theme, with a central evidence corkboard,
+panels for suspects and case files, and a mathematical-analysis section. Clicking a suspect
+reveals their profile and relation to each record; selecting a clue updates the candidate list and
+a stepwise trace. The interface is a proposed visualization, not a screenshot of finished
+software.
+5. Proposed Research Methodology
+5.1 Research design
+A design-and-evaluation methodology is proposed. The system would first be implemented
+against manually specified fictional cases, then tested for logical correctness and interaction
+quality. The initial research question concerns whether the rule engine behaves correctly and
+can explain its output; it does not investigate crime-prediction accuracy.
+Case: Null | RESEARCH
+8
+5.2 Case construction and baseline
+Create a small synthetic case collection (e.g., five to ten scenarios) with five to eight suspects
+each, six to ten clues per case, and ground-truth sets of candidates for each selected-clue
+configuration. Include cases with no clues, one remaining candidate, multiple candidates,
+incompatible mandatory clues, and explicitly unknown facts. A manually verified truth-table or
+set-based solution provides the baseline against which application output is compared.
+5.3 Evaluation criteria
+Measure Operational definition Success condition
+Candidate-set correctness
+Automated output vs
+manually verified candidates
+Exact match for all
+benchmark cases
+Traceability Whether each exclusion cites
+a selected clue and rule
+Every exclusion has a valid
+explanation
+Contradiction behavior Response to inconsistent
+mandatory clues
+Warning shown; no invented
+conclusion
+Unknown-data handling Effect of absent/disputed
+information
+Unknown is neversilently
+treated as false
+Usability Task completion and
+qualitative student feedback
+Clear, reproducible use in a
+live demo
+5.4 Ethical and academic safeguards
+All names, portraits, accounts, and logs in the planned demonstration should be fictional or
+explicitly consented to. No real individual should be accused or ranked as suspicious. The
+program’s output should be labeled “logically possible candidates” rather than “guilty
+suspect.” Further, access to a user account is not proof that its owner personally performed
+an action. These boundaries are essential for responsible educational use.
+6. Feasibility and Development Plan
+Stage Deliverable Proposed validation
+1. Case model Synthetic data and clue
+schema
+Check data consistency and
+source links
+2. Inference engine Set filtering and Boolean
+rules
+Compare to manual
+solutions
+3. Interactive prototype Suspect and evidence panels Perform live clue-selection
+tests
+4. Mathematical view Explanations and relations
+matrix
+Verify each displayed
+calculation
+5. Enhanced UI Connected investigation
+board Test dragging and readability
+Case: Null | RESEARCH
+9
+Stage Deliverable Proposed validation
+6. Evaluation Benchmark cases and study
+notes
+Report findings without
+overclaiming
+A minimal viable product needs only one well-defined fictional case, five suspects,
+approximately six clues, a working mathematical trace, and contradiction handling. Additional
+case dialogue, animated strings, and character narratives are secondary features. This scope
+keeps the discrete mathematics visible and the implementation realistic for an undergraduate
+project.
+7. Discussion and Limitations
+The strongest educational contribution is the transformation of abstract concepts into
+inspectable computer operations: set intersection corresponds to candidate filtering;
+predicates correspond to evidence constraints; relations correspond to permissions; and
+induction explains why the algorithm remains correct after each clue. This connection is
+consistent with the broader role of discrete mathematics in reasoning about algorithms and
+systems (Lehman et al., 2015).
+However, a deterministic rule engine is only as sound as the input assumptions. The same
+records may admit several plausible explanations; an event associated with an account is not
+conclusive personal identification; timestamps can be incorrect; and missing logs can create
+false impressions. Moreover, the current proposal uses a simplified Boolean model and does
+not address probabilistic uncertainty, chain of custody, or courtroom admissibility. Results
+from the proposed evaluation are not yet available, and project novelty cannot be established
+without a dedicated prior-art review.
+8. Conclusion
+Case: Null is a feasible, research-grounded Discrete Mathematics project that applies logic,
+sets, and relations to a simulated digital investigation. Prior research demonstrates the
+relevance of logic, structured evidence, and explainable analysis in digital forensics. The
+proposed classroom prototype shows how mathematical rules connect evidence to each
+result. The next step is to implement the prototype and evaluate it against clear benchmarks.
+Case: Null | RESEARCH
+10
+References
+Casey, E., Barnum, S., Griffith, R., Snyder, J., van Beek, H., & Nelson, A. (2017). Advancing
+coordinated cyber-investigations and tool interoperability using a community developed
+specification language. Digital Investigation, 22, 14–45.
+https://doi.org/10.1016/j.diin.2017.08.002 Full text
+Kent, K., Chevalier, S., Grance, T., & Dang, H. (2006). Guide to integrating forensic techniques
+into incident response (NIST Special Publication 800-86). National Institute of Standards
+and Technology. https://doi.org/10.6028/NIST.SP.800-86 NIST PDF
+Lee, J., Lim, C., Jin, B., Min, M., & Kim, H. (2025). DF-graph: Structured and explainable analysis
+of communication data for digital forensics. Forensic Science International: Digital
+Investigation, 54, Article 301981. https://doi.org/10.1016/j.fsidi.2025.301981 Full text
+Lehman, E., Leighton, F. T., & Meyer, A. R. (2015). Mathematics for computer science. MIT
+OpenCourseWare. Textbook
+Liu, C., Singhal, A., & Wijesekera, D. (2015). A logic-based network forensic model for evidence
+analysis. In G. Peterson & S. Shenoi (Eds.), Advances in Digital Forensics XI (pp. 129–145).
+Springer. https://doi.org/10.1007/978-3-319-24123-4_8 NIST copy
+React Flow. (n.d.). Adding interactivity. Official documentation
+Streamlit. (n.d.). Session state. Official documentation
+SymPy Development Team. (n.d.). Logic. SymPy documentation. Official documentation
+Case: Null | RESEARCH
+11
+Appendix A. Integrated Illustrative Case: All Five Chapters
+in Action
+Case scenario. At approximately 10:25 PM, a confidential university research file was copied
+using a local session on Lab-PC2. The system examinesfive fictional identities: Ahmed (A), Sara
+(S), Omar (O), Lina (L), and Khalid (K). For this controlled teaching example only, the
+investigated hypothesis is direct physical use of Lab-PC2; remote access is explicitly outside
+the case assumptions. A matching account log is not, by itself, proof of who was operating the
+computer.
+A.1 Fictional records and case constraints
+Table A1 summarizes records designed for this demonstration. P = authorized to open the
+research file; T = account login between 10:00 and 10:30 PM; W = associated with Lab-PC2
+activity. A verified alibi is a separate clue relevant only under the stated physical-presence
+hypothesis.
+Identity System role Last login P / T / W Verified alibi
+Ahmed (A) Administrator 5:35 PM 1 / 0 / 0 Not recorded
+Sara (S) Researcher 10:14 PM 1 / 1 / 1 Yes: elsewhere
+Omar (O) Student 10:09 PM 0 / 1 / 0 Not recorded
+Lina (L) Student No verified
+event
+0 / 0 / 0 Not recorded
+Khalid (K) Technician 10:21 PM 1 / 1 / 1 Not recorded
+The binary entries are verified, synthetic facts within this small closed-world case. “Not
+recorded” means no verified alibi is available; it does not claim that the person has no alibi in
+reality.
+A.2 Chapter 1 — Logic and Proofs: predicates, connectives, quantifiers
+Define predicates P(x), T(x), and W(x) from the three evidence columns. The first-stage
+eligibility rule is:
+Eligible(x) = P(x) ∧ T(x) ∧ W(x)
+For Sara, Eligible(S) = 1 ∧ 1 ∧ 1 = 1. For Omar, Eligible(O) = 0 ∧ 1 ∧ 0 = 0. The proposition
+“there exists an eligible suspect,” ∃x ∈ U Eligible(x), istrue, while “every suspect is eligible,”
+Ax ∈ U Eligible(x), is false. The implication Eligible(x) ⇒ P(x) follows from the definition of
+Eligible(x).
+Next define N(x) to mean that no validated physical-location evidence excludes x from being
+at Lab-PC2. If Sara has a verified physical alibi, then N(S) = 0. The extended rule becomes:
+PhysicalCandidate(x) = P(x) ∧ T(x) ∧ W(x) ∧ N(x)
+Case: Null | RESEARCH
+12
+The interface can show a four-column truth-value check for each identity and explain why the
+extended condition is false. If a trusted record requires both a proposition and its negation,
+the system flags a logical inconsistency rather than declaring a culprit.
+A.3 Chapter 2 — Basic Structures: sets, functions, matrices
+Let the universal set be U = {A, S, O, L, K}. The verified clue sets are:
+P = {A, S, K}; T = {S, O, K}; W = {S, K}
+Selecting the three initial clues producesthe explicit set operation:
+P ∩ T ∩ W = {S, K}
+Functions organize each suspect’s record. For example, role: U → Roles gives role(S) =
+Researcher and role(K) = Technician. A second function lastLogin: U → Time ∪ {No verified
+event} gives lastLogin(S) = 10:14 PM and lastLogin(L) = No verified event. The extra value
+avoids incorrectly assigning a login time to missing data.
+The following Boolean evidence matrix uses suspect rows and the four conditions P, T, W, and
+N as columns. A row passes the extended logical rule only when all four entries are 1:
+Identity P T W N
+P ∧ T ∧ W ∧
+N
+Ahmed (A) 1 0 0 1 0
+Sara (S) 1 1 1 0 0
+Omar (O) 0 1 0 1 0
+Lina (L) 0 0 0 1 0
+Khalid (K) 1 1 1 1 1
+This is a Boolean matrix interpretation: “AND” across the row tests conditions. It is not
+ordinary numerical matrix multiplication.
+A.4 Chapter 3 — Mathematical Induction: algorithm correctness
+The candidate-filtering algorithm maintains an invariant. If E1, E2, …, Ek are selected
+mandatory clue sets, then after processing k clues the program retains precisely the
+candidates satisfying every one of those clues:
+C₀ = U; Cₖ = Cₖ₋₁ ∩ Eₖ
+Base case (k = 0): No conditions have been applied, so C₀ = U. Every identity is correctly
+retained.
+Inductive hypothesis: Assume Cₖ = U ∩ E1 ∩ … ∩ Ek, i.e., the set of identitiessatisfying the first k
+clues.
+Inductive step: Processing clue Ek+1 gives Cₖ₊₁ = Cₖ ∩ Ek+1 = U ∩ E1 ∩ … ∩ Ek ∩ Ek+1. Thus the
+invariant also holds for k + 1. By mathematical induction, the algorithm is correct for any finite
+number of selected verified clues.
+Case: Null | RESEARCH
+13
+In this actual case the program calculates C₀ = {A,S,O,L,K}; after permission C₁ = {A,S,K}; after
+time C₂ = {S,K}; after workstation C₃ = {S,K}; and after the validated physical-alibi condition N =
+{A,O,L,K}, C₄ = {K}. The proof establishes correctness relative to the encoded clues, not the
+truth of the clues themselves.
+A.5 Chapter 4 — Counting: combinations and search space
+The user interface can provide six independently selectable clue controls, shown below. The
+first four determine the worked deduction; the other two show how the number of possible
+investigation configurations grows.
+Clue Selected evidence condition Matching set
+E1 Hasresearch-file permission {A, S, K}
+E2 Account login within incident
+window {S, O, K}
+E3 Lab-PC2 activity {S, K}
+E4 Not excluded by validated
+physical alibi {A, O, L, K}
+E5 Account is active in this case {A, S, O, L, K}
+E6
+Completed laboratory access
+training
+{A, S, L, K}
+Each clue may be selected or not selected, giving 2 choices per clue. By the fundamental
+counting principle, the six controls produce 2⁶ = 64 possible clue-selection patterns. If the
+investigator must choose exactly three of the six clues, the number of combinations is C(6, 3) =
+6! / (3!3!) = 20. If a two-person scenario were to be examined, the number of unordered pairs
+from five suspects would be C(5, 2) = 10.
+These counts quantify possibilities; they do not determine guilt or give probabilistic
+confidence. The actual candidatesfor any chosen clue combination still require the logical set
+intersection.
+A.6 Chapter 5 — Relations: access permissions and evidence links
+Let F = {research.pdf, draft.txt} and D = {Lab-PC2, Office-PC}. Define a binary access relation
+Raccess ⊆ U × F. In the fictional case:
+Raccess = {(A, research.pdf), (S, research.pdf), (K,research.pdf), (S, draft.txt), (O, draft.txt)}
+The inverse relation identifies which accounts have access to a particular file:
+Raccess⁻¹(research.pdf) = {A, S, K} = P. A second relation Rdevice ⊆ U × D captures associated
+computer events, with (S, Lab-PC2) and (K, Lab-PC2) in Rdevice, giving W = {S, K}. These
+relations produce the same candidate sets used by the logic engine.
+The user-to-file relation can be displayed as an incidence matrix:
+Identity research.pdf draft.txt
+Ahmed (A) 1 0
+Case: Null | RESEARCH
+14
+Identity research.pdf draft.txt
+Sara (S) 1 1
+Omar (O) 0 1
+Lina (L) 0 0
+Khalid (K) 1 0
+On the evidence board, a line labeled “can access” represents a pair in Raccess, while a line
+labeled “activity on” represents a pair in Rdevice. Because these connect different sets
+(people and resources), the usual reflexive and symmetric tests for a relation on one set
+should not be applied indiscriminately.
+A.7 Integrated live demonstration and proposed output
+Step 1: Open the case; five suspects appear as movable cards, and the research file,
+workstation, logs, and alibi appear as evidence cards. Step 2: The professor activates E1, E2,
+and E3. The logic panel shows Eligible(x) = P(x) ∧ T(x) ∧ W(x), the mathematical panel displays
+P ∩ T ∩ W = {S, K}, and the relations matrix identifies which accounts correspond to which
+resources.
+Step 3: The professor reveals the verified alibi E4. The screen shows C₄ = {K}, updates the
+matrix and the activity log, and displays the inductive explanation of why the filtering
+procedure retains only candidates meeting every chosen clue. Step 4: The counting panel
+shows “64 clue-selection patterns,” “20 ways to choose three clues,” and “10 hypothetical
+suspect pairs.” Step 5: The professor can deselect E4, returning {S, K}, or select a deliberately
+incompatible verified clue to trigger a contradiction warning. A case report records the
+selected clues, their sources, the set operations, the relation links, and the final list of logically
+possible candidates.
+Interpretation and limitation. Underthisfictional case’sstated physical-presence assumptions,
+Khalid is the only remaining candidate after the fourth clue. This is not proof that Khalid
+leaked the file, and it is not a prediction about any real individual. An actual forensic
+investigation would require independent validation, alternative hypotheses, and careful
+attention to missing or compromised records.
